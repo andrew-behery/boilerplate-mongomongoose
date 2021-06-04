@@ -23,7 +23,7 @@ const createAndSavePerson = (done) => {
     favoriteFoods: ["Blood", "Steak", "More Blood"]
   })
   
-  andrew.save((err, data) => err ? done(err) : done(null,data));
+  person.save((err, data) => err ? done(err) : done(null,data));
 };
 
 
