@@ -22,10 +22,10 @@ const createAndSavePerson = (done) => {
     age: 26,
     favoriteFoods: ["Blood", "Steak", "More Blood"]
   }).save((err, data) => {
-    if (err) return done(err);
+    if (err) return done(err)
     return done(null, data)
   });
-}
+};
 
 
 const createManyPeople = (arrayOfPeople, done) => {
