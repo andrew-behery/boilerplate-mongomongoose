@@ -27,8 +27,10 @@ const createAndSavePerson = (done) => {
     //   ...do your stuff here...
   });
 
-  done(null /*, data*/);
+  //done(null /*, data*/);
 };
+
+createAndSavePerson();
 
 const createManyPeople = (arrayOfPeople, done) => {
   done(null /*, data*/);
