@@ -21,16 +21,12 @@ const createAndSavePerson = (done) => {
     name: "Andrew",
     age: 26,
     favoriteFoods: ["Blood", "Steak", "More Blood"]
+  }).save((err, data) => {
+    if (err) return done(err);
+    return done(null, data)
   });
+}
 
-  andrew.save(function(err, data) {
-    //   ...do your stuff here...
-  });
-
-  //done(null /*, data*/);
-};
-
-createAndSavePerson();
 
 const createManyPeople = (arrayOfPeople, done) => {
   done(null /*, data*/);
