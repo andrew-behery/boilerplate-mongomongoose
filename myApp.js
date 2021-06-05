@@ -56,7 +56,7 @@ const findPeopleByName = (personName, done) => {
 };
 
 const findOneByFood = (food, done) => {
-  done(null /*, data*/);
+  Person.findOne({favoriteFoods: food}, (err, foundFood) => err ? done(err) : done(null,foundFood));
 };
 
 const findPersonById = (personId, done) => {
