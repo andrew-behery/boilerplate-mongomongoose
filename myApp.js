@@ -102,8 +102,8 @@ const queryChain = (done) => {
   .limit(2)
   .select('-age')
   .exec((err, data) => {
-    if(error){
-      console.log(error);
+    if(err){
+      console.log(err);
     }else{
       done(null, data)
     }
